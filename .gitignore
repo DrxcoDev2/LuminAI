@@ -2,8 +2,7 @@
 
 # dependencies
 /node_modules
-<<<<<<< HEAD
-=======
+
 /.pnp
 .pnp.*
 .yarn/*
@@ -14,7 +13,7 @@
 
 # testing
 /coverage
->>>>>>> 3b456fe (commit)
+
 
 # next.js
 /.next/
@@ -23,24 +22,18 @@
 # production
 /build
 
-<<<<<<< HEAD
-=======
+
 # misc
 .DS_Store
 *.pem
 
->>>>>>> 3b456fe (commit)
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-<<<<<<< HEAD
-# env files
-=======
-# env files (can opt-in for committing if needed)
->>>>>>> 3b456fe (commit)
+
 .env*
 
 # vercel
