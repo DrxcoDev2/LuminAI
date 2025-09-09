@@ -22,7 +22,14 @@ type UserParams = {
   icon: React.ReactNode;
 }
 
-export function SidebarDemo({ links, app, user}: {links: LinkItem[], app: string, user: UserParams[]}) {
+type SidebarDemoProps = {
+  links: LinkItem[];
+  app: string;
+  user: UserParams[];
+  children: React.ReactNode;
+};
+
+export function SidebarDemo({ links, app, user, children }: SidebarDemoProps) {
   
   const [open, setOpen] = useState(false);
   return (
@@ -50,7 +57,9 @@ export function SidebarDemo({ links, app, user}: {links: LinkItem[], app: string
           
         </SidebarBody>
       </Sidebar>
-      
+      <div className="flex-1">
+        {children}
+      </div>
     </div>
   );
 }
